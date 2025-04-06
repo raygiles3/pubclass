@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive USA Map</title>
+  <style>
+    svg {
+      width: 100%;
+      height: auto;
+    }
+    .state {
+      fill: white;
+      stroke: black;
+      stroke-width: 1;
+      cursor: pointer;
+    }
+    .state.clicked {
+      fill: lightblue;
+    }
+    .label {
+      font-size: 10px;
+      text-anchor: middle;
+      fill: black;
+      pointer-events: none;
+      display: none;
+    }
+    .label.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<svg viewBox="0 0 1000 600" id="usa-map">
+  <!-- Example: Single State (normally you'd have all 50 paths here) -->
+  <g id="CA" class="state-group">
+    <path class="state" d="M100,300 L150,300 L150,350 L100,350 Z"></path> <!-- Just example -->
+    <text class="label" x="125" y="325">California</text>
+  </g>
+  <g id="TX" class="state-group">
+    <path class="state" d="M400,400 L450,400 L450,450 L400,450 Z"></path>
+    <text class="label" x="425" y="425">Texas</text>
+  </g>
+  <!-- Add all other states here -->
+</svg>
+
+<script>
+  document.querySelectorAll('.state-group').forEach(group => {
+    group.addEventListener('click', () => {
+      const path = group.querySelector('.state');
+      const label = group.querySelector('.label');
+      path.classList.add('clicked');
+      label.classList.add('visible');
+    });
+  });
+</script>
+
+</body>
+</html>
