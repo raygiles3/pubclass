@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects Front Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .thumbnail {
+            background-color: #f9d5ec; /* Default pastel */
+            padding: 20px;
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Different pastel colors */
+        .thumb1 { background-color: #ffd6d6; }
+        .thumb2 { background-color: #d6f5d6; }
+        .thumb3 { background-color: #d6e0f5; }
+        .thumb4 { background-color: #fff0b3; }
+        .thumb5 { background-color: #f5d6ff; }
+        .thumb6 { background-color: #d6fff9; }
+        .thumb7 { background-color: #ffecd6; }
+        .thumb8 { background-color: #e0d6ff; }
+        .thumb9 { background-color: #d6ffe7; }
+        .thumb10 { background-color: #ffe6d6; }
+        .thumb11 { background-color: #e6f0ff; }
+
+        /* Optional: Hover Effect */
+        .thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="thumbnail thumb1">Consulting</div>
+        <div class="thumbnail thumb2">Book</div>
+        <div class="thumbnail thumb3">La Romana Terra</div>
+
+        <div class="thumbnail thumb4">La Romana .inc</div>
+        <div class="thumbnail thumb5">Vista Catalina House</div>
+        <div class="thumbnail thumb6">860</div>
+
+        <div class="thumbnail thumb7">1023 & 216</div>
+        <div class="thumbnail thumb8">AI / Bus Classes</div>
+        <div class="thumbnail thumb9">Empress Network</div>
+
+        <div class="thumbnail thumb10">College of Wisdom</div>
+        <div class="thumbnail thumb11">CUNY</div>
+    </div>
+
+</body>
+</html>
