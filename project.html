@@ -18,21 +18,36 @@
         }
 
         .thumbnail {
-            background-color: #f9d5ec; /* Default pastel */
+            background-color: #f9d5ec;
             padding: 20px;
-            height: 150px;
+            height: 200px;
             border-radius: 10px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            font-size: 18px;
-            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
             font-weight: bold;
+            text-align: center;
             transition: all 0.3s ease;
-            cursor: pointer;
         }
 
-        /* Different pastel colors */
+        .thumbnail img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Unique pastel backgrounds */
         .thumb1 { background-color: #ffd6d6; }
         .thumb2 { background-color: #d6f5d6; }
         .thumb3 { background-color: #d6e0f5; }
@@ -44,32 +59,46 @@
         .thumb9 { background-color: #d6ffe7; }
         .thumb10 { background-color: #ffe6d6; }
         .thumb11 { background-color: #e6f0ff; }
-
-        /* Optional: Hover Effect */
-        .thumbnail:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
     </style>
 </head>
 <body>
 
     <div class="grid-container">
-        <div class="thumbnail thumb1">Consulting</div>
-        <div class="thumbnail thumb2">Book</div>
-        <div class="thumbnail thumb3">La Romana Tierra</div>
-
-        <div class="thumbnail thumb4">LaRomana.com </div>
-        <div class="thumbnail thumb5">Vista Catalina House</div>
-        <div class="thumbnail thumb6">860</div>
-
-        <div class="thumbnail thumb7">1023 E 227th</div>
-        <div class="thumbnail thumb8">AI / Bus Classes</div>
-        <div class="thumbnail thumb9">Empress Networks LLC</div>
-
-        <div class="thumbnail thumb10">College of Westchester</div>
-        <div class="thumbnail thumb11">CUNY</div>
-    </div>
-
-</body>
-</html>
+        <a href="#" class="thumbnail thumb1">
+            <img src="https://via.placeholder.com/60" alt="Consulting">
+            Consulting
+        </a>
+        <a href="#" class="thumbnail thumb2">
+            <img src="https://via.placeholder.com/60" alt="Book">
+            Book
+        </a>
+        <a href="#" class="thumbnail thumb3">
+            <img src="https://via.placeholder.com/60" alt="La Romana Terra">
+            La Romana Terra
+        </a>
+        <a href="#" class="thumbnail thumb4">
+            <img src="https://via.placeholder.com/60" alt="La Romana Inc">
+            La Romana Inc
+        </a>
+        <a href="#" class="thumbnail thumb5">
+            <img src="https://via.placeholder.com/60" alt="Vista Catalina House">
+            Vista Catalina House
+        </a>
+        <a href="#" class="thumbnail thumb6">
+            <img src="https://via.placeholder.com/60" alt="860">
+            860
+        </a>
+        <a href="#" class="thumbnail thumb7">
+            <img src="https://via.placeholder.com/60" alt="1023 & 216">
+            1023 & 216
+        </a>
+        <a href="#" class="thumbnail thumb8">
+            <img src="https://via.placeholder.com/60" alt="AI / Bus Classes">
+            AI / Bus Classes
+        </a>
+        <a href="#" class="thumbnail thumb9">
+            <img src="https://via.placeholder.com/60" alt="Empress Network">
+            Empress Network
+        </a>
+        <a href="#" class="thumbnail thumb10">
+            <img src="https://via.placeholder.com/60" alt
